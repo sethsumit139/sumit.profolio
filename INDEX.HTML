@@ -1,358 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" colour="navy">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit Seth | Portfolio</title>
-    <style>
-        /* Global Reset & Theme */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth; /* Enables smooth scrolling without JavaScript */
-        }
-
-        body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        /* Header & Navigation */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(15, 23, 42, 0.95);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 10%;
-            z-index: 1000;
-            border-bottom: 1px solid #1e293b;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #38bdf8;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            transition: color 0.3s ease;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 0 10%;
-            background: radial-gradient(circle at 80% 20%, #1e3a8a 0%, #0f172a 60%);
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            animation: fadeIn 1s ease-out;
-        }
-
-        .hero h1 span {
-            color: #38bdf8;
-        }
-
-        .hero h2 {
-            font-size: 1.8rem;
-            color: #94a3b8;
-            margin-bottom: 1.5rem;
-            animation: fadeIn 1.2s ease-out;
-        }
-
-        .hero p {
-            max-width: 600px;
-            font-size: 1.1rem;
-            color: #cbd5e1;
-            margin-bottom: 2rem;
-            animation: fadeIn 1.4s ease-out;
-        }
-
-        /* CSS Animation for Hero */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            background-color: #38bdf8;
-            color: #0f172a;
-            padding: 0.75rem 2rem;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            background-color: #7dd3fc;
-        }
-
-        /* Section Layout */
-        section {
-            padding: 6rem 10% 4rem;
-            border-bottom: 1px solid #1e293b;
-        }
-
-        section h2 {
-            font-size: 2.2rem;
-            margin-bottom: 3rem;
-            text-align: center;
-            position: relative;
-        }
-
-        section h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 4px;
-            background-color: #38bdf8;
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
-
-        /* About Section */
-        .about-content {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            color: #cbd5e1;
-            text-align: center;
-        }
-
-        .highlight {
-            color: #38bdf8;
-            font-weight: 600;
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .skill-card {
-            background-color: #1e293b;
-            padding: 1.5rem;
-            text-align: center;
-            border-radius: 8px;
-            border: 1px solid #334155;
-            transition: border-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .skill-card:hover {
-            border-color: #38bdf8;
-            transform: translateY(-5px);
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .project-card {
-            background-color: #1e293b;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid #334155;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            border-color: #475569;
-        }
-
-        .project-info {
-            padding: 2rem;
-        }
-
-        .project-info h3 {
-            margin-bottom: 0.75rem;
-            color: #38bdf8;
-        }
-
-        .project-info p {
-            color: #94a3b8;
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Contact Section */
-        .contact-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-content p {
-            margin-bottom: 2rem;
-            color: #cbd5e1;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #090d16;
-            color: #64748b;
-            font-size: 0.9rem;
-            border-top: 1px solid #1e293b;
-        }
-
-        /* Responsive Design for Mobile Devices */
-        @media (max-width: 768px) {
-            header { 
-                padding: 1rem 5%; 
-            }
-            nav ul { 
-                gap: 1rem;
-            }
-            nav a {
-                font-size: 0.9rem;
-            }
-            .hero h1 { 
-                font-size: 2.5rem; 
-            }
-            section { 
-                padding: 5rem 5% 3rem; 
-            }
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
+    <title>portfolio</title>
+<header style= background:green color:yellow border:100px> we are software engineer </header>
+</head><!--
 <body>
+    <h1>sumit seth</h1>
+    <hr>
+    <P>
+        <b>Lorem ipsum dolor sit amet </b>consectetur adipisicing elit. Consectetur, corrupti velit dolorum eius sequi neque. Nobis eveniet numquam accusantium blanditiis sint voluptates doloribus perferendis quo quod obcaecati repellendus minima, laudantium, provident aut et pariatur. Expedita doloremque nihil <i>aspernatur. Perferendis, perspiciatis reiciendis</i> praesentium minima quia ut temporibus cumque harum voluptatem placeat. ipsum dolor sit amet consectetur adipisicing elit. Cupiditate assumenda ,,<u>tempora hic eligendi sit sapiente minus, animi mollitia</u> dolor repudiandae necessitatibus omnis accusamus quasi consequuntur ipsum qui quia quo molestiae!
+    </P>
+    <!--- this <hr> tag use for line break -->
+    <hr>
+    <h2>information technology</h2>
+    <h3>GROUND </h3>
+    <h4>WAVE </h4>
+    <a href="https://beyondplussize.in">beyond</a>
+    <br>
+    <img src="Images\car.jpeg" alt="image" height="50px"/><br>
+    <big>the big line</big>
+    <br>
+    <small>the small line </small>
+    <hr>
+    <main>
+        <section>
+            <h5> name : sumit seth </h5>
+        </section>
+        <article>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, numquam.</h6></article>
+        <aside> this tag used to display ads </aside>
+        <hr>
+        <a href="https://beyondplussize.in" target="_main">  <img src="Images\car.jpeg" alt="beyond" height="100px"></a>
+    </main>
+    <a href="p.html" style="color: brown;" target="_main">the practice page </a>
+    <p>
+        H<sub>2</sub>0<br>
+        <b>(a+b)<sup>2</sub></b>=a<sub>2</sub>+b<sub>2</sub>+2ab></sup>
+    <hr>  
+    </p>
+    <pre>Lorem ipsum                                                                           dolor sit amet consectetur adipisicing elit. Sed error optio sit dolore animi asperiores suscipit tenetur natus vitae magnam?</pre>
+    <hr>
+<h4> unordered list example </h4>
 
-    <!-- Header / Navigation Bar -->
-    <header>
-        <div class="logo">Sumit Seth</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <ul>
+        <li>mango</li>
+        <ul>
+            <li> apple:fruit</li>
+            <li>season: winter </li>
+            <li>color: red</li>
+        </ul>
+        <li>apple</li>
+         <ul>
+            <li> mango:fruit</li>
+            <li>season: winter </li>
+            <li>color: red</li>
+        </ul>
+        <li> pine </li>
+         <ul>
+            <li> pine:fruit</li>
+            <li>season: winter </li>
+            <li>color: red</li>
+        </ul>
+    </ul>
+    <hr>
+<h4>ordered list item </h4>
+    <ol>
+        <li>apple </li>
+        <li>mango</li>
+        <li>jackfruit</li>
+    </ol>
+    <hr>
+    <table>
+        <thead>
+        <caption> STUDENT DATA</caption>
+        <tr>
+           <th colspan="2"> Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Sumit</td>
+            <td>e20443035</td>
+        </tr>
+        <tr>
+            <td>ROHIT</td>
+            <td>0443035</td>
+        </tr>
+        </tbody>
+    </table>
+<hr>
+<B><P>THIS IS FORM CREATION PRACTICE </P></B>
+<form action="/dummy.php">
 
-    <!-- Home / Hero Section -->
-    <section id="home" class="hero">
-        <h1>Hi, I'm <span>Sumit Seth</span></h1>
-        <h2>Full Stack Developer & Tech Enthusiast</h2>
-        <p>An eager learner dedicated to mastering modern web technologies, building scalable applications, and solving real-world design problems.</p>
-        <a href="#contact" class="btn">Get In Touch</a>
-    </section>
+    <input type="text" placeholder="Enter your name"><br>
+    <input type="password" placeholder="Enter credemntial"><br>
+    
+    <label for="ID1">
+        <input type="radio" value="AXIS" name="bank" id="ID1">AXIS
+    </label>
+   
+    <label for="ID2">
+        <input type="radio" value="DCB" name="bank" id="ID2">DCB
+    </label>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>I am a passionate <span class="highlight">PW Skills learner</span> currently diving deep into the world of computer science and full-stack development. Through structured learning and hands-on grit, I am shaping my skills to build intuitive, fast, and visually impactful digital products.</p>
-            <p>My journey involves transforming theoretical knowledge into practical logic. I love taking on fresh challenges that push my coding capabilities and allow me to collaborate with fellow builders in the ecosystem.</p>
-        </div>
-    </section>
+    <h4> please select any 2 subjects</h4>
+    <label for="math">
+        <input type="checkbox" value="math" name="subject" id="124">math
+    </label><br>
+    <label for="cs">
+        <input type="checkbox" value="cs" name="subject" id="123">cs
+    </label><br>
+    <label for="English">
+        <input type="checkbox" value="English" name="subject" id="122">English
+    </label><br>
+    <label for="Information">
+        <input type="checkbox" value="information" name="subject" id="121">Information
+    </label><br><br>
+    <textarea name="feedback" id="181" placeholder="enter your feedback" >FEEDBACK</textarea><BR><BR>
+        select your city <br>
+     <select>
+        <option value="DELHI">DELHI</option>
+        <option value="lucknow">lucknow</option>
+        <option value="varanasi">varanasi</option>
+        <option value="gomti">gomti</option>
+        <option value="DELHI">DELHI</option>
+        <option value="lucknow">lucknow</option>
+        <option value="varanasi">varanasi</option>
+        <option value="gomti">gomti</option>
+        <option value="DELHI">DELHI</option>
+        <option value="lucknow">lucknow</option>
+        <option value="varanasi">varanasi</option>
+        <option value="gomti">gomti</option>
+     </select><br>
+     <input type="submit" value="submit"><br><br>
+<iframe src="https://beyondplussize.in" height="1000px" width="500px"> </iframe>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><h3>HTML5</h3></div>
-            <div class="skill-card"><h3>CSS3</h3></div>
-            <div class="skill-card"><h3>JavaScript</h3></div>
-            <div class="skill-card"><h3>React.js</h3></div>
-            <div class="skill-card"><h3>Node.js</h3></div>
-            <div class="skill-card"><h3>MongoDB</h3></div>
-            <div class="skill-card"><h3>Git & GitHub</h3></div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>E-Commerce Interface</h3>
-                    <p>A responsive front-end layout designed for modern digital stores, focusing on clean user interactions and fluid navigation layouts.</p>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Task Management App</h3>
-                    <p>A full-stack productivity tool designed to help users track workflows, featuring user authentication and dynamic database updates.</p>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Interactive Portfolio</h3>
-                    <p>This exact website! Built using clean semantic structures and customized styling to present my core capabilities cleanly.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-content">
-            <p>I am always open to discussing new opportunities, open-source projects, or tech collaborations. Drop me an email or connect with me via my socials.</p>
-            <a href="mailto:sumitseth@example.com" class="btn">sumitseth@example.com</a>
-        </div>
-    </section>
+</form>
 
-    <!-- Footer -->
+
     <footer>
-        <p>&copy; 2026 Sumit Seth. Built with passion and code.</p>
+        <pre>                                                                        @2026 sumit seth|infirmation technology</pre>
     </footer>
-
 </body>
 </html>
