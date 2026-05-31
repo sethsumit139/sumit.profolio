@@ -1,42 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Hub</title>
 
-    <style>
-        body {
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            text-align: center;
-            margin-top: 100px;
-            font-family: Arial, sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-        a {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2,#6dd5ed);
+}
 
-        h1 {
-            color: white;
-        }
-    </style>
+.container{
+    text-align:center;
+    background:rgba(255,255,255,0.15);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:white;
+    margin-bottom:25px;
+}
+
+p{
+    color:white;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:block;
+    width:250px;
+    margin:15px auto;
+    padding:15px;
+    background:white;
+    color:#333;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#f1f1f1;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>My Pages</h1>
+<div class="container">
+    <h1>🚀 Welcome</h1>
+    <p>Select a page to visit</p>
 
-    <p>
-        <a href="p.html">
-            Profolio pages
-        </a>
-    </p>
+    <a class="btn" href="practice.html" target="_blank">
+        Practice Page
+    </a>
 
-    <p>
-        <a href="practice.html">
-            practice pages
-        </a>
-    </p>
+    <a class="btn" href="p.html" target="_blank">
+        Portfolio Page
+    </a>
+</div>
 
 </body>
 </html>
