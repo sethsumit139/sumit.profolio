@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absoulet postioning </title>
+    <style>
+        .parent-container{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px dashed black;
+            margin: 50px;
+        }
+        .normal{
+            position: static;
+            background-color: black;
+            padding: 10px;
+            border: 2px solid yellowgreen;
+            color: bisque;
+        }
+        .absoulet{
+            position: absolute;
+            top: 0;
+            right: 0;
+                        
+            background-color: rgb(56, 28, 28);
+            color: rgb(223, 204, 241);
+            font-weight: bold;
+            padding: 15px;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+    <div class="normal"> static box </div>
+    <div class="absoulet">absoulet box</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Dolor doloribus repudiandae similique rerum accusamus 
+    deleniti iusto quisquam recusandae explicabo esse. 
+    Reiciendis, perspiciatis nobis! Commodi numquam a labore
+    repellat non sed?</p>
+    </div>
+</body>
+</html>

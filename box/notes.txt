@@ -1,0 +1,40 @@
+
+applying the margin,padding,border in box model 
+height and width:- 
+display properties :- 
+setting width for image :- when we attch image in html we need to adjust width and height 
+of image 
+
+css display propertise :- 
+1) block :- in this propertise the content dispaly take full width 
+of page and display always with new line 
+
+2) inline :- in this properties we dispaly the content after evry content on same line 
+and its ignore S propertise like width 
+
+3)inline-block :- in this propertise element are displayon same line 
+but bechave like block element its never igore any propertise like 
+inline 
+
+4) none :- its hide all things on page 
+
+how to apply display propertise :-
+
+display: inline-block
+
+VISIBILTY :- IN THIS properties we use to do hide content using
+display propertise 
+
+css specificity:- in this concept we know ki kiski preority jadya hai 
+syltying me esme sabhi elements se leke universal seclectors ke tak
+sab compare kiye jate hai 
+
+psedo class selector :- the thress commonly used selector are:
+
+1-- .ACTIVE
+2-- .HOVER
+3-- .FOCUS
+
+
+
+

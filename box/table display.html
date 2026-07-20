@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .collapse{
+        visibility: collapse;
+    }
+    h3,table {
+        text-align: center;
+        border: 2px solid black;
+        width: 40%;
+    }
+
+
+</style>
+<body>
+    <h3> table </h3>
+    <table class="table">
+    <OL>    
+        <tr>
+            <th>name</th>
+            <th>stream</th>
+            <th>postion</th>
+        </tr>
+        <tr>
+            <td>SUMIT</td>
+            <td>IT</td>
+            <td>1ST</td>
+
+        </tr>
+        <tr class="collapse">
+            <td>SHUBHAM</td>
+            <td>IT</td>
+            <td>11TH</td>
+
+        </tr>
+        <tr>
+            <td>SAUMYA</td>
+            <td>IT</td>
+            <td>1ST</td>
+        </tr>
+    </OL>  
+
+
+
+    </table>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SPECIFICITY </title>
+</head>
+<style>
+    /* score 1 : elements  */
+    p{
+        color: red;
+    }
+    /* score 10 : class  */
+
+    .myclass{
+        color:orange;
+    }
+
+
+    /* score 100: ID */
+    #unique{
+        color:blue
+    }
+/* class(10)+id(100)=110*/
+    #unique.myclass{
+        color: brown;
+    }
+</style>
+<body>
+    <P id="unique" class="myclass">i am a para</P>
+    <p class="myclass"> para 2  </p>
+    <p>para 3</p>
+</body>
+</html>

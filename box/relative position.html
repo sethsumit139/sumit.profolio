@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative postioning</title>
+    <style>
+        .box{
+            width: 150px;
+            border: 2px solid violet;
+            padding: 15px;
+            margin: 5px;
+            color: bisque;
+            background-color: black;
+        }
+        .box-rel{
+            position: relative;
+            top: 20px;
+            left: 50px;
+            background-color: blue;
+            color: azure;
+            z-index: 10;
+            width: 150px;
+            padding: 15px;
+            margin: 5px;
+        }
+        .box-reli{
+            position: relative;
+            top: 20px;
+            left: 50px;
+            background-color: blue;
+            color: azure;
+            z-index: 80;
+            width: 150px;
+            padding: 15px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <h3>Relative positioning</h3>
+    <div class="box">1. normal/static/deafult box</div>
+    <div class="box-rel">2. relative box</div>
+    <div class="box-reli">3. deafult/static</div>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+css selectores :
+1--> tagname selectores / element selectors :- its is use to apply style 
+dirctly on the all elements lije <p> <h1> such as.
+BUT IF AGR HUM EXTERNAL ME STUYLE KI HAI AUR AGR HUM INLINE BHI KARTE DE 
+stylING TO SABSE PRORITY INLINE KO MITI HAI AU RINLINE WALA EXECUTE OR APPLY 
+HOGA 
+
+2--> ID selectores:- esme hum kisi bhi tag ke aage id properties ka use karke 
+id define kar dete hai aur fir css me same id name se styling kar te hai 
+tab style id ko check karke result deta hai aur sab me change nhi hote sirf given 
+id me chage hota hai. esko likhne ke liye # ka use hota hai 
+
+3--> class selectors:- class selector targets HTML elements 
+that have a specific class attribute. To use it, 
+you write a period (.) character followed by the exact class name
+
+4--> UNIVERSAL SELECTORS:- “*” targets all elements in the document.
+● Useful for resetting default styles or applying global styles.
+
+
+
+COLOR CONCEPT -----> COLOR PICKER + COLOR COLOR
+
+2) BACKGROUND TECHNIQUE----->
+background image:- use url for attach/apply bg image 
+
+3) typography basic :- 
+i--> font size  ii--> font family  iii--> font size  iv--> font weight
+v--> text align 
+
+BASIC OF CSS END NOW WE START SOME ADVANCE TOPIC.......
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAIN PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde omnis dolorem inventore consequatur doloremque perferendis magnam velit, nostrum iusto molestias ratione et corporis tempora quas earum 
+    Quaerat odit minus repellendus neque tempora tenetur asperiores, officiis magni, sed facilis natus maxime quod laudantium quidem ea fuga error nemo recusandae a dolorem harum eveniet sapiente. Harum, repellendus veniam.
+    </p>
+    <h4 id="firstpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, eius?,</h4>
+     <div class="firstclass"> Lorem ipsum dolor sit amet.</div>
+    <div class="firstclass">Lorem ipsum dolor sit amet.</div>
+    <div class="firstclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, numquam.</div>
+    <div class="firstclass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolor debitis.</div>
+     
+</body>
+</html>

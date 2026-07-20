@@ -1,0 +1,12 @@
+postionisng:-
+
+static postioning :- 
+
+
+relative postioning :-
+
+
+absoulet postioning :-
+
+
+fixed postioning :-
