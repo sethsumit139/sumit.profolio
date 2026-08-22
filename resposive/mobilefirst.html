@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breakpoint </title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        .card{
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-img{
+            height: 400px;
+            background-image: url("https://blog.logrocket.com/wp-content/uploads/2024/05/css-breakpoints-responsive-design.png");
+            background-color: dodgerblue;
+        }
+        .card-content{
+            padding: 20px;
+        }
+        @media screen and (min-width: 600px){
+            body{
+                background-color: aquamarine;
+            }
+            .card{
+                flex-direction: row;
+                max-width: 700px;
+            }
+            .card-img{
+                flex: 0 0 40%;
+                height: auto;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="card-content">
+                <h2> This is a first reposnive practice</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem unde explicabo possimus rerum earum velit ipsam nobis impedit reiciendis fuga saepe aliquam obcaecati libero, eius suscipit similique praesentium. Qui, excepturi.</p>
+            </div>
+        <button>read more..</button>
+
+        </div>
+    </article>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index concept </title>
+    <style>
+        .stack-container{
+            position: relative;
+            height: 300px;
+            margin-top: 50px;
+        }
+        .card{
+            position: fixed;
+            padding: 30px;
+            color: black;
+            border: 3px dashed black;
+            width: 150px;
+            height: 150px;
+        }
+        .red{
+            background-color: red;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .blue{
+            background-color: blue;
+            top: 40px;
+            left: 40px;
+            z-index: 2;
+        }
+        .green{
+            background-color: green;
+            top: 80px;
+            left: 80px;
+            z-index: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="stack-container">
+        <div class="card red"> z-index 1</div>
+        <div class="card blue">z index 2</div>
+        <div class="card green">zindex 3</div>
+
+
+    </div>
+    
+</body>
+</html>

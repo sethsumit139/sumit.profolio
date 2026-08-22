@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky behaviour</title>
+    <style>
+        .scroll-action{
+            height: 500px;
+            padding: 20px;
+        }
+
+        .sticky-header{
+            position: sticky;
+            top: 0;
+            background-color: black;
+            padding: auto;
+            color: black;
+        }
+        .content{
+            background-color: rgb(223, 218, 211);
+        }
+        .content-box{
+            height: 200px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="scroll-action">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit.</p>
+            <div class="sticky-header"> sticky header </div>
+            <div class="content-box"> content 1</div>
+            <div class="content-box">content 2</div>
+            <div class="content-box">content 3</div>
+            <div class="content-box">content 4</div>
+            <div class="content-box">content 5</div>
+            <div class="content-box">content 6</div>
+            <div class="content-box">content 7</div>
+            <div class="content-box">content 8</div>
+            <hr>
+        </div>
+        <div style="background-color: aquamarine;height: 20px;">
+            content outside sticky 
+        </div>
+
+
+    </div>
+
+</body>
+</html>

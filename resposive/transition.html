@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-1{
+            width: 100px;
+            height: 100px;
+            background: aquamarine;
+            transition-property: background;
+            transition-duration: 0.5s;
+        }
+        .box-1:hover{
+            background: brown;
+            color: beige;
+            text-align: center;
+            padding: 20px;
+            margin: 40px;
+    
+        }
+        .box-2{
+            width: 100px;
+            height: 100px;
+            margin-top: 40px;
+            background: aquamarine;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+
+        .box-2:hover{
+            background-color: blue;
+            transform: scale3d(1.6 2.5 3.0);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box-1">hover</div>
+    <div class="box-2">hover </div>
+    
+</body>
+</html>

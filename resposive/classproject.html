@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class project</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: 
+             "head head"
+             "nav  main"
+             "foot foot";
+            gap: 10px;
+        }
+         header {
+            height: 90px;
+            grid-area: head;
+            background-color: dodgerblue;
+            color: black;
+            font-weight: 900;
+        }
+        nav {
+            height: 250px;
+            grid-area:nav;
+            background-color: rgb(175, 236, 183);
+            color: grey;
+            font-style: italic;
+            font-weight: bolder
+        }
+        main {
+            height: 350;
+            grid-area:main;
+            background-color: rgb(126, 105, 80);
+            color: navy;
+        }
+        footer {
+            height: 200px;
+            grid-area: foot;
+            background-color: chocolate;
+            font-style: oblique;
+            font-family: monospace;
+            font-weight: 600;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>content</main>
+        <footer>footer</footer>
+    </div>
+      
+</body>
+</html>

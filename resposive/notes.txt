@@ -1,0 +1,13 @@
+responsive webpage using media query :
+
+
+
+
+break point:-
+
+grid:- 
+
+
+transtion :- 
+
+animation :- 

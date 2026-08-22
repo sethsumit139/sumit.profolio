@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resposnsive basic concept </title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .box{
+            background-color: aqua;
+            border: 2px solid grey;
+            font-weight: 900;
+            padding: 40px;
+            border-radius: 8px;
+
+        }
+        body{
+            margin: 0;
+            padding: 15px;
+            background-color: thistle;
+            text-align: center;
+        }
+        header{
+            color: black;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 8px;
+        }
+        @media screen and (min-width:756px){
+            .container{
+                flex-direction: row;
+            }
+            .box{
+                flex: 1;
+                background-color: brown;
+                flex-direction: row-reverse;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header> this our resposnsive design</header>
+    <p>we are creating new design with learning</p>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+    </div>
+    
+</body>
+</html>

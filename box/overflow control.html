@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>over flow control </title>
+    <style>
+        .container{
+
+        }
+        .box{
+            width: 40px; 
+            height: 80px;
+            padding: 100px;
+            border: 2px dashed blue;
+            background-color: beige;
+        }
+        .overflow-visible{
+            overflow: visible;
+        }
+        .overflow-hidden{
+            overflow: hidden;
+        }
+        .overflow-auto{
+            overflow: scroll;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p> 1. visible (deafult action)</p>
+        </div>
+        <div class="box overflow-visible">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </div>
+        <div>
+            <p> 1. hidden </p>
+        </div>
+        <div class="box overflow-hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing Eum.voluptate similique consequuntur soluta amet cupiditate ut, nostrum magnam nemo fugit id eius architecto accusamus voluptatibus doloribus praesentium dolorum! Quam aliquid ut aliquam mollitia et eum recusandae consequatur amet itaque natus sit, iste nostrum quasi nisi asperiores architecto excepturi fugiat doloremque distinctio
+        </div>
+        <div>
+            <p> 1. scroll </p>
+        </div>
+        <div class="box overflow-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem a corrupti eaque impedit error voluptate similique consequuntur soluta amet cupiditate ut, nostrum magnam nemo fugit id eius architecto accusamus voluptatibus doloribus praesentium dolorum! Quam aliquid ut aliquam mollitia et eum recusandae consequatur amet itaque natus sit, iste nostrum quasi nisi asperiores architecto excepturi fugiat doloremque distinctio assumenda labore! Eum.
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

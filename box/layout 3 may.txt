@@ -10,3 +10,19 @@ absoulet postioning :-
 
 
 fixed postioning :-
+
+
+overflow control:-  using this we control data which in box 
+1. visible--> in thi s we have visible all thing over the box 
+
+2. hidden ---> in this we hide the extra content of the box 
+
+3. scroll/auto---> in this properties we read and show all in the box 
+using scroll button
+
+overflow & z index :- 
+
+z index:-  use for postion the element means ki kon si chez pahle aayegi ye tab use hoti jab cheze 3 dimension me hoti hai aur tab kon si chez pahle prenent hogi 
+
+
+flex box :-
